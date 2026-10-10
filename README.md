@@ -34,7 +34,7 @@ Setup Instructions
 Security
 ## Project Screenshot
 
-![AI Career Recommendation System](project-screenshot.png)
+![AI Career Recommendation System](project-ss.png)
 
 
 Author
