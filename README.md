@@ -32,8 +32,10 @@ Setup Instructions
 6. Open "index.html" using Live Server.
 
 Security
+## Project Screenshot
 
-Keep your API key private. Never upload your ".env" file to GitHub.
+![AI Career Recommendation System](project-screenshot.png)
+
 
 Author
 
