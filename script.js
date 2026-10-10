@@ -37,7 +37,31 @@ recommendBtn.addEventListener("click", async function () {
     try {
         // Request main career recommendation
         const response = await fetch(
-            "http://localhost:5000/api/recommend",
+            "https://ai-career-recommandation-system.onrender.com",
+            {  
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json"
+                },
+                body: JSON.stringify({
+                    education,
+                    skills,"
+            {  
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json"
+                },
+                body: JSON.stringify({
+                    education,
+                    skills,  
+            {  
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json"
+                },
+                body: JSON.stringify({
+                    education,
+                    skills,
             {
                 method: "POST",
                 headers: {
