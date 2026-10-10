@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Career Recommendation System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="top-header">
+    <div class="brand-icon">🧠</div>
+    <div class="brand-text">
+        <h1>AI Career Recommendation System</h1>
+        <p>Your Interests + Your Skills = A Brighter Future ✨</p>
+    </div>
+    <div class="header-note">Dream ✦ Plan ✦ Build<br>
+        Your Career, Your Way ♡
+    </div>
+</header>
+
+<main class="dashboard">
+
+    <section class="form-container">
+        <div class="section-heading">
+            <span class="icon purple">♟</span>
+            <div>
+                <h2>Tell Us About You</h2>
+                <p>Fill in your details and let our system suggest a career path for you!</p>
+            </div>
+        </div>
+
+        <label for="education">🎓 &nbsp; Education Level</label>
+        <input type="text" id="education" placeholder="e.g. B.Tech CSE">
+
+        <label for="skills">〈/〉 &nbsp; Current Skills (comma separated)</label>
+        <textarea id="skills" placeholder="e.g. C++, Python, HTML, CSS"></textarea>
+
+        <label for="interests">♥ &nbsp; Interests (comma separated)</label>
+        <textarea id="interests" placeholder="e.g. Web Development, AI, Problem Solving"></textarea>
+
+        <label for="experience">💼 &nbsp; Experience Level</label>
+        <select id="experience">
+            <option value="">Select experience</option>
+            <option value="Beginner">Beginner</option>
+            <option value="Intermediate">Intermediate</option>
+            <option value="Advanced">Advanced</option>
+        </select>
+
+        <button type="button" id="recommendBtn">
+            ✨ Get Career Recommendation &nbsp; →
+        </button>
+
+        <div class="pro-tip">
+            <h3>💡 Pro Tip ♡</h3>
+            <p>Be honest about your skills and interests. The more details you provide, the better your recommendations!</p>
+        </div>
+    </section>
+
+    <section class="result-container" id="result">
+
+        <div class="career-card">
+            <div class="career-icon">🎯</div>
+            <div class="career-info">
+                <h3>Your Recommended Career</h3>
+                <h2 id="careerTitle">Your Career Recommendation</h2>
+                <p id="resultText">Fill in your details and get your personalized career analysis.</p>
+            </div>
+            <div class="career-art">💻</div>
+        </div>
+
+        <div class="result-grid">
+            <div class="info-card skills-card">
+                <div class="card-heading">
+                    <span class="icon pink">🧩</span>
+                    <div>
+                        <h2>Missing Skills</h2>
+                        <p>These skills will help you become job-ready.</p>
+                    </div>
+                </div>
+                <ul id="missingSkillsList"></ul>
+            </div>
+
+            <div class="info-card roadmap-card">
+                <div class="card-heading">
+                    <span class="icon green">🗺️</span>
+                    <div>
+                        <h2>Learning Roadmap</h2>
+                        <p>Follow these steps to build your skills.</p>
+                    </div>
+                </div>
+                <ol id="roadmapList"></ol>
+            </div>
+        </div>
+
+        <div class="other-careers">
+            <h2>🌟 Other Career Options</h2>
+            <ul id="careerSuggestions"></ul>
+        </div>
+
+        <div class="next-steps">
+            <span class="icon blue">↗</span>
+            <div>
+                <h2>Your Next Steps</h2>
+                <p>Start with the basics, build real projects, and keep practicing.</p>
+                <p>Consistency is the key to success!</p>
+            </div>
+            <span class="encouragement">You can do it! ♡</span>
+        </div>
+
+        <footer class="dashboard-footer">
+            <div>🚀 <strong>Build Projects</strong><small>Gain real-world experience</small></div>
+            <div>👥 <strong>Get a Community</strong><small>Learn and grow together</small></div>
+            <div>⭐ <strong>Achieve Your Goals</strong><small>Your future is waiting!</small></div>
+        </footer>
+
+    </section>
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>
