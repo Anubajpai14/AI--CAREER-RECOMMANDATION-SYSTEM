@@ -37,31 +37,7 @@ recommendBtn.addEventListener("click", async function () {
     try {
         // Request main career recommendation
         const response = await fetch(
-            "https://ai-career-recommandation-system.onrender.com",
-            {  
-                method: "POST",
-                headers: {
-                    "Content-Type": "application/json"
-                },
-                body: JSON.stringify({
-                    education,
-                    skills,"
-            {  
-                method: "POST",
-                headers: {
-                    "Content-Type": "application/json"
-                },
-                body: JSON.stringify({
-                    education,
-                    skills,  
-            {  
-                method: "POST",
-                headers: {
-                    "Content-Type": "application/json"
-                },
-                body: JSON.stringify({
-                    education,
-                    skills,
+            "https://ai-career-recommandation-system.onrender.com/api/recommend",
             {
                 method: "POST",
                 headers: {
@@ -153,7 +129,7 @@ recommendBtn.addEventListener("click", async function () {
 
                 try {
                     const detailsResponse = await fetch(
-                        "http://localhost:5000/api/career-details",
+                        "https://ai-career-recommandation-system.onrender.com/api/career-details",
                         {
                             method: "POST",
                             headers: {
